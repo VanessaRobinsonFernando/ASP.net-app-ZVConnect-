@@ -1,0 +1,205 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Final_Project.SiteMaster" %>
+
+<head runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 271px;
+        }
+        .auto-style5 {
+            height: 49px;
+            text-align: left;
+        }
+        .auto-style14 {
+            width: 100%;
+            height: 54px;
+        }
+        .auto-style16 {
+            width: 1309px;
+            height: 20px;
+        }
+        .auto-style17 {
+            width: 157px;
+            text-align: right;
+            height: 20px;
+        }
+        .hover-menu ul li{
+            display:none;
+        }
+        .hover-menu ul li:hover > ul{
+            display:block;
+        }
+
+        .dropbtn {
+  background-color: white;
+  color: #ef3f37;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: Arial
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: red ;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: flex; flex-direction:row}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn  {color: #6000BF; background-color: white; }
+
+.dropbtn{
+    font-weight: bold; 
+    color: #FFFFFF; 
+    background-color:  #262161;
+    cursor: pointer
+}
+
+
+        .auto-style22 {
+            height: 41px;
+        }
+        .auto-style23 {
+            height: 31px;
+            text-align: left;
+            width: 925px;
+        }
+        .auto-style24 {
+            height: 169px;
+            text-align: center;
+        }
+        .auto-style25 {
+            height: 31px;
+            text-align: right;
+        }
+        .auto-style27 {
+            color: #FFFFFF;
+        }
+        .auto-style28 {
+            color: #FFCC99;
+        }
+        .auto-style29 {
+            background-color: #262161;
+        }
+        .auto-style30 {
+            text-decoration: none;
+        }
+        </style>
+
+
+
+
+</head>
+
+
+<form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style23" style="background-color: #D0A375">
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Names="Papyrus" ForeColor="White" Text="ZVConnect" Font-Size="Medium"></asp:Label>
+            </td>
+            <td class="auto-style25" style="background-color: #fbaf41">
+                <asp:Image ID="Image1" runat="server" Height="71px" ImageUrl="~/Image/logo.png" Width="90px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style5" colspan="2">
+                <table class="auto-style14" style="background-color: #6000BF">
+                    <tr>
+                        <td class="auto-style16" style="background-color: #262161">
+                            
+                            <!--Button 1-->
+                             <div class="dropdown">
+                            <button class="dropbtn" style="font-family: Calibri">Mobile Packages</button>
+                            &nbsp;&nbsp;
+                          
+                            <div class="dropdown-content">
+                                <a href="Business.aspx">Business.aspx</a>
+                            </div>
+                            </div>
+                            &nbsp; &nbsp;&nbsp; 
+
+                            <!--Button 2-->
+                             <div class="dropdown">
+                             <button class="dropbtn" style="font-family: Calibri">Internet and TV</button>
+                             &nbsp; &nbsp; &nbsp;
+                          
+                            <div class="dropdown-content">
+                               <a href="Innovation.aspx">Innovation.aspx</a>
+                                <a href="lifestyle.aspx">lifestyle.aspx</a>
+                                <a href="living.aspx">living.aspx</a>
+                            </div>
+                            </div>
+                            &nbsp; &nbsp;&nbsp;
+                            
+                            <!--Button 3-->
+                            <div class="dropdown">
+                            <button class="dropbtn" style="font-family: Calibri">Why us?</button>
+                            &nbsp;&nbsp;
+                          
+                            <div class="dropdown-content">
+                                <a href="travel.aspx">travel.aspx</a>
+                            </div>
+                            </div>
+                            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp; 
+                       
+                        </td>
+                        <td class="auto-style17" style="background-color: #262161; font-family: Calibri; color: #FFFFFF;">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="MyAccount.aspx" class="auto-style30" style="font-family: Calibri; color: #FFFFFF"><span class="auto-style29"><strong>MyAccount</strong></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style22" colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #262161; font-family: Arial, Helvetica, sans-serif;" class="auto-style24" colspan="2"><span class="auto-style27">CONNECT</span><br />
+                <span class="auto-style27">Connect with us and follow us on </span>
+                <br class="auto-style27" />
+                <span class="auto-style27">our social media pages</span><br />
+                <asp:Image ID="Image2" runat="server" Height="24px" ImageUrl="~/Image/insta.png" Width="28px" />
+&nbsp;
+                <asp:Image ID="Image3" runat="server" Height="23px" ImageUrl="~/Image/fbook.png" Width="30px" />
+&nbsp;
+                <asp:Image ID="Image4" runat="server" Height="23px" ImageUrl="~/Image/whatsaap.png" Width="29px" />
+&nbsp;
+                <br />
+                <br />
+                <span class="auto-style28"><em>Copyright © 2023 ZVConnect LLC</em></span></td>
+        </tr>
+    </table>
+</form>
